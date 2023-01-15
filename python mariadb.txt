@@ -1,0 +1,10 @@
+import random
+
+firstnames = ['Allen', 'David', 'Mary', 'Dennis', 'Joseph', 'Dennis', 'Ritchie', 'Robert', 'David', 'Mary']
+lastnames = ['Brown' ,'Brown', 'Green', 'Green', 'Black', 'Black', 'Salt', 'Salt', 'Suzuki', 'Chen']
+programs = ['ME']*3 + ['EE']*3 +  ['CS']*4
+random.shuffle(programs)
+print(programs)
+
+for student in range(len(firstnames)):
+    print(f"('{firstnames[student]}', '{lastnames[student]}', '{programs[student]}', {random.randint(2010, 2025)}), ",end="")
